@@ -11,7 +11,7 @@ namespace AutomationFramework
     public class TestBase
     {
         protected IWebDriver driver;
-        protected string baseUrl = ConfigurationManager.AppSettings["baseUrl"];
+        protected string baseUrl = ConfigurationManager.AppSettings["url"];
         public void SetUp(string browserName)
         {
             if (browserName.ToLower().Equals("ie"))
